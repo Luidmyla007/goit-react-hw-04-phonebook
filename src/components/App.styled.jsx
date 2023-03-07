@@ -7,3 +7,8 @@ margin-right: auto;
 margin-top: 50px;
 
 `;
+
+export const ContactStyled = styled.div`
+padding-left: 30px;
+
+`;

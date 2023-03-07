@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import { nanoid } from "nanoid"; 
 import { GlobalStyle } from './GlobalStyles';
-import { Container } from './App.styled'
+import { Container } from './App.styled';
+import { ContactStyled } from './App.styled';
 import Form from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
@@ -78,14 +79,14 @@ formSubmitHandler = (data, resetForm) => {
      <Container>
          <GlobalStyle/>        
         <Form onSubmit={this.formSubmitHandler} />        
-        <div>
+        <ContactStyled>
           <h2>Contacts</h2>
           <Filter value={filter} onChange={this.onFilterChange}/>
           <ContactList
             contacts={searchContacts}
             onDeleteContact={this.deleteContact}            
           />          
-        </div>
+        </ContactStyled>
      </Container>
     );
   };
