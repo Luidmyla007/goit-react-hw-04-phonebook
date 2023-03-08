@@ -60,9 +60,8 @@ export function App() {
   const onFilterChange = event => {
       const { name, value } = event.currentTarget;
     setFilter({ [name]: value });
-  };
+  };  
   
-  // const searchContacts = this.getContact();
      return (
      <Container>
          <GlobalStyle/>        
