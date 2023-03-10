@@ -1,4 +1,3 @@
-// import { Component } from "react";
 import { useState, useEffect } from 'react';
 import { nanoid } from "nanoid"; 
 import { GlobalStyle } from './GlobalStyles';
