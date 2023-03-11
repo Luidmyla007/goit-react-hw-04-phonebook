@@ -56,9 +56,8 @@ export function App() {
     );    
   };
  
-  const onFilterChange = event => {
-      const { name, value } = event.currentTarget;
-    setFilter({ [name]: value });
+  const onFilterChange = event => {      
+    setFilter(event.currentTarget.value);
   };  
   
      return (
